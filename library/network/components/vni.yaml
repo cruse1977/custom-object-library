@@ -1,0 +1,21 @@
+---
+name: "VNI2"
+label: "VNI"
+plural_name: "vnis"
+description: "Main network fabric for data center"
+fields:
+  - name: "name"
+    label: "VNI NAME"
+    type: "text"
+    primary: true
+  - name: "vniid"
+    label: "VNI ID"
+    type: "integer"
+    primary: false
+  - name: "group"
+    label: "VNI Group"
+    type: "object"
+    object_type: "netbox_custom_objects.VNIGroup"
+    primary: false       
+
+    

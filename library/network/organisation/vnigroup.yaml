@@ -1,0 +1,15 @@
+---
+name: "VNIGroup"
+label: "VNI Group"
+plural_name: "VNI Groups"
+description: "A Group Object for VNIs"
+fields:
+  - name: "name"
+    label: "VNI Group Name"
+    type: "text"
+    primary: true
+  - name: "site"
+    label: "Site"
+    type: "object"
+    object_type: "dcim.site"
+    primary: false       

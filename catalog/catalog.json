@@ -1,0 +1,15 @@
+{
+    "data": [
+        {
+            "id": "network.organisation.clos_fabric",
+            "name": "CLOSFabric",
+            "version": "0.1.0",
+            "tags": [
+                "network",
+                "fabric",
+                "clos"
+            ],
+            "url": "https://github.com/cruse1977/custom-object-library/blob/main/network/organisation/clos_fabric.yaml"
+        }
+    ]
+}

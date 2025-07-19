@@ -1,0 +1,41 @@
+---
+name: "CLOSFabric"
+label: "CLOS Fabric"
+plural_name: "CLOS Fabrics"
+description: "Main network fabric for data center"
+catalog:
+  id: "network.organisation.clos_fabric"
+  latest_version: "0.1.0"
+  author: "Chris Russell"
+  tags:
+    - "network"
+    - "fabric"
+    - "clos"
+object:
+  - version: "0.1.0"
+    fields:
+      - name: "underlay_prefix"
+        label: "Underlay Prefix"
+        type: "object"
+        object_type: "ipam.prefix"
+        primary: false
+      - name: "name"
+        label: "Fabric Name"
+        type: "text"
+        primary: true
+      - name: "site"
+        label: "Site"
+        type: "object"
+        object_type: "dcim.site"
+        primary: false       
+      - name: "fabric_type"
+        label: "Fabric Type"
+        type: "select"
+        choice_set: 
+          name: "fabric_type_choices"
+          choices:
+            - "3_stage_clos:3 Stage CLOS"
+            - "5_stage_clos:5 Stage CLOS"
+        primary: false
+
+    
