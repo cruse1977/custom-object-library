@@ -3,7 +3,7 @@ import argparse
 import yaml
 import json
 
-GIT_ROOT = "https://github.com/cruse1977/custom-object-library/blob/main/"
+GIT_ROOT = "https://raw.githubusercontent.com/cruse1977/custom-object-library/refs/heads/main/library/"
 
 catalog = {
     "data": []
